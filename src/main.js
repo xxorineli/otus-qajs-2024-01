@@ -6,7 +6,7 @@ function greet(name) {
 console.log(greet("World"))
 
 const farewell = name => {
-  return `Goodbye, ${name}` 
+  return `Goodbye, ${name}`
 }
 
-console.log(farewell("World"))
+console.log(farewell('World'))

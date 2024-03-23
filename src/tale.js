@@ -1,30 +1,30 @@
 function kolobok(character) {
   switch (character) {
     case 'Дедушка':
-      return 'Я от дедушки ушел';
+      return 'Я от дедушки ушел'
     case 'Заяц':
-      return 'Я от зайца ушел';
+      return 'Я от зайца ушел'
     case 'Лиса':
-      return 'Меня съели';
+      return 'Меня съели'
     default:
-      return 'Неизвестный персонаж';
+      return 'Я встретил кого-то неизвестного'
   }
 }
 
-console.log(kolobok('Дедушка'));
-console.log(kolobok('Заяц'));
-console.log(kolobok('Лиса'));
+console.log(kolobok('Дедушка'))
+console.log(kolobok('Заяц'))
+console.log(kolobok('Лиса'))
 
-
-function newYear(name) {
-  switch (name) {
+function newYear(character) {
+  switch (character) {
     case 'Дед Мороз':
     case 'Снегурочка':
-      return `${name}! ${name}! ${name}!`;
+      return `${character}! ${character}! ${character}!`
     default:
-      return 'Неизвестный персонаж';
+      // return 'Неизвестный персонаж';
+      throw new Error('Неизвестный персонаж')
   }
 }
 
-console.log(newYear("Дед Мороз"));
-console.log(newYear("Снегурочка"));
+console.log(newYear('Дед Мороз'))
+console.log(newYear('Снегурочка'))
